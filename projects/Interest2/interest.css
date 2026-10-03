@@ -1,0 +1,39 @@
+html
+{background-color: azure;
+backdrop-filter: initial;
+color: rgb(13, 35, 36);}
+
+header
+{font-family: Arial, Helvetica, sans-serif;}
+
+nav
+{font-family: Arial, Helvetica, sans-serif;
+font-size: x-large;}
+
+main
+{
+font-family: Arial, Helvetica, sans-serif;
+background-color: beige;
+}
+
+main p
+{
+background-color: blanchedalmond;
+background-blend-mode:exclusion;
+}
+
+footer
+{font-family: Arial, Helvetica, sans-serif;}
+
+.emphasize
+{color: brown;}
+
+.de-emphasize
+{color: rgb(184, 106, 159);}
+
+#interest-page
+{color: rgb(148, 9, 9);}
+
+dt
+{font-weight: bolder;
+}
