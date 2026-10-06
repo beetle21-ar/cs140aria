@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aria's Picture Web</title>
+    <link rel="stylesheet" href="picture.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Learning Pictures - Aria Wirastyo</h1>
+    </header>
+
+    <nav>
+        <a href="#header">Header</a>
+        <a href="#picture">Picture</a>
+        <a href="#questions">Questions</a>
+    </nav>
+
+    <main>
+        <h2 id="picture">Pictures</h2>
+        <picture>
+            <img src="Dallin_H._Oaks.jpg" alt="President Dallin H. Oaks" width="422" height="595">
+        </picture>
+        <p>
+        Favorite General Conference Talk: Dallin H. Oaks.
+        </p>
+        <p class="credit">
+        Photo from <a href="https://commons.wikimedia.org/wiki/File:Dallin_H._Oaks.jpg">Wikimedia Commons</a>. I do not own this picture.
+        </p>
+
+        <h2 id="questions">Questions</h2>
+        <p>Answer the following questions:</p>
+        <ol>
+            <li>What kind of photos are good to encode using <span>JPEG</span>?<br>
+            &rightarrow; Real photos from a camera or phone, like people, nature, or landscapes. They have a lot of colors and JPEG makes the file small.</li>
+            <li>What kind of photos are good to encode using <span>GIF</span>?<br>
+            &rightarrow; Simple pictures with not many colors (only 256 colors), like logos, icons, cartoons, and small animations.</li>
+            <li>What is unique about the <span>PNG</span> format?<br>
+            &rightarrow; PNG can have a transparent background and it does not lose quality when saved (lossless). Good for logos and screenshots.</li>
+            <li>How do you resize your photo to the size it should be displayed?<br>
+            &rightarrow; Open the photo in photo editing software like <span>Photoshop, GIMP, or Paint</span>, change the image size (width and height in pixels) to the size on the webpage, then save it again.</li>
+            <li>Why should you resize photos using photo editing software instead of resizing it using CSS?<br>
+            &rightarrow; CSS only makes the photo look smaller, but the browser still downloads the big file. So the page loads slow. Resizing with software makes the file smaller and the page loads faster.</li>
+        </ol>
+    </main>
+
+    <footer>&copy; Aria Wirastyo 2026</footer>
+</body>
+</html>
