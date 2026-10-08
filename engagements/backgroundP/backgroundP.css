@@ -1,0 +1,30 @@
+body {
+background-color: #e8dcc8;
+background-image: url("paper-texture-400.png");
+background-repeat: repeat;
+}
+
+header {
+background: #fdf8f0 
+url("decorative-botanical-200.png") no-repeat right top;
+padding: 50px;
+}
+img {
+width: 200px;
+}
+
+ul{
+list-style-image: url("dot.png");
+}
+
+#texturedbg{
+    width: 400px;
+}
+
+#favicon {
+    width: 64px;
+}
+
+#decorativept{
+    width: 500px;
+}
