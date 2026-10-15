@@ -1,0 +1,72 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: repeat url(images/leaf_background.jpg);
+}
+
+header h1{
+    text-align: center;
+}
+
+nav{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+nav a{
+    display: block;
+    padding: 1rem;
+    border: 1px solid green;
+}
+
+main{
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+}
+
+.waikikifig{
+    border: 2px solid green;
+    position: relative;
+    width: fit-content;
+    float: left;
+}
+.fixed{
+    border: 2px solid rgb(128, 0, 0);
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: fit-content;
+    margin: 0;
+    float: left;
+}
+
+.relative{
+    border: 2px solid rgb(128, 111, 0);
+    position: relative;
+    top: 20px;
+    left: 40px;
+    width: fit-content;
+}
+
+.absolute{
+    border: 2px solid rgb(128, 0, 124);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: fit-content;
+    margin: 0;
+    float: left;
+}
+
+.waikikiB{
+    width: fit-content;
+    max-width: 100%;
+    height: auto;
+}
+
+.enforcer{
+    clear: both;
+}
+footer{
+    text-align: center;
+}
