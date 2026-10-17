@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <!-- Single lime leaf definition with stem and veins -->
+    <g id="lime-leaf">
+      <!-- Leaf blade -->
+      <path d="M 0 0 C 12 -18, 32 -18, 44 0 C 32 18, 12 18, 0 0 Z" 
+            fill="#84cc16" fill-opacity="0.25" 
+            stroke="#4d7c0f" stroke-opacity="0.35" stroke-width="1.5" />
+      <!-- Central vein -->
+      <path d="M 0 0 C 14 0, 28 0, 42 0" 
+            fill="none" stroke="#4d7c0f" stroke-opacity="0.3" stroke-width="1.2" stroke-linecap="round" />
+      <!-- Side veins -->
+      <path d="M 12 0 C 16 -5, 20 -7, 24 -9 M 12 0 C 16 5, 20 7, 24 9 M 22 0 C 26 -4, 30 -6, 34 -7 M 22 0 C 26 4, 30 6, 34 7" 
+            fill="none" stroke="#4d7c0f" stroke-opacity="0.25" stroke-width="1" stroke-linecap="round" />
+    </g>
+  </defs>
+
+  <!-- Pattern arrangement -->
+  <!-- Top-left / corner seamless leaves -->
+  <use href="#lime-leaf" transform="translate(10, 15) rotate(-25)" />
+  <use href="#lime-leaf" transform="translate(130, 15) rotate(-25)" />
+  <use href="#lime-leaf" transform="translate(10, 135) rotate(-25)" />
+  <use href="#lime-leaf" transform="translate(130, 135) rotate(-25)" />
+
+  <!-- Center-right leaf -->
+  <use href="#lime-leaf" transform="translate(75, 45) rotate(45)" />
+
+  <!-- Center-bottom leaf -->
+  <use href="#lime-leaf" transform="translate(45, 95) rotate(-65)" />
+
+  <!-- Small accent leaf -->
+  <use href="#lime-leaf" transform="translate(95, 105) rotate(15) scale(0.7)" />
+  <use href="#lime-leaf" transform="translate(-25, 105) rotate(15) scale(0.7)" />
+</svg>
+
