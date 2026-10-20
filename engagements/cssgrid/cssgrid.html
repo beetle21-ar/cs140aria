@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <link rel="stylesheet" href="cssgrid.css">
+</head>
+<body>
+    <header>
+        <h1 class="mtitle">CSS Grid</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+    </nav>
+    <main>
+        <h2>Welcome to CSS Grid</h2>
+        <div class="parent">
+            <div class="card">
+                <h3 class="stitle">BOX A</h3>
+                <div class="descra"><p>paragraph test for BOX A</p></div>
+            </div>
+            <div class="card">
+                <h3 class="stitle">BOX B</h3>
+                <p class="descrb">paragraph test for BOX B</p>
+            </div>
+            <div class="card">
+                <h3 class="stitle">BOX C</h3>
+                <p class="descrc">paragraph test for BOX C</p>
+                <div class="parents">
+                    <div class="children1 wide"><p>child 1</p></div>
+                    <div class="children2"><p>child 2</p></div>
+                    <div class="children1"><p>child 3</p></div>
+                    <div class="children2"><p>child 4</p></div>
+                    <div class="children1"><p>child 5</p></div>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="stitle">BOX D</h3>
+                <p>paragraph test for BOX D</p>
+            </div>
+            <div class="card">
+                <h3 class="stitle">BOX E</h3>
+                <p>paragraph test for BOX E</p>
+            </div>
+            <div class="card">
+                <h3 class="stitle">BOX F</h3>
+                <p>paragraph test for BOX F</p>
+            </div>
+        </div>
+        <div class="question">
+            <div class="answer">
+                <p>According to the instructor, what is the main difference between CSS Grid and CSS Flex?</p>
+                <p>CSS Grid is a two-dimensional layout system that handles both rows and columns, the children follow the parents container, whereas CSS Flex is a one-dimensional layout system designed to arrange elements in a single direction—either as a row or a column, the parents container follows the need of the children.</p>
+            </div>
+            <div class="answer">
+                <p>Who decides where a child goes on the page: the child or its parent? Explain using your three-column layout.</p>
+                <p>The parent decides. In my layout the .parent container has display: grid with three 200px columns, so it places each card (BOX A to F) into a column. The cards do not place themselves. BOX C is a child of the container, but it is also a parent: it holds my .parents div, and that div uses its own grid to place its five children. The headings and paragraphs inside each card just use normal flow, because the card has no layout of its own.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Aria Wirastyo</p>
+    </footer>
+    
+
+
+
+
+
+
+</body>
+</html>
