@@ -37,6 +37,7 @@ nav a{
 
 .mainrow{
     display: flex;
+    flex-wrap: wrap;
 }
 .sidebar{
     width: 20%;
@@ -105,6 +106,58 @@ footer{
     display: block;
     width: 100%;
 }
+
+@media ONLY screen AND (max-width: 700px){
+    body{
+        
+    }
+    .mainrow{
+        flex-direction: column;
+        
+    }
+    main{
+        order: 1;
+    }
+    .sidebar{
+        box-sizing: border-box;
+        border-right: none;
+        border-top: solid 1px gray;
+        order: 2;
+        width: 100%;
+    }
+    nav{
+        flex-direction: row;
+        gap: 8px;
+        flex-wrap: wrap;
+        padding: 8px;
+        /*justify-content: unset;*/
+    }
+    nav a{
+        padding: 14px 20px;
+        text-align: center;
+        flex: 1 1 40%;
+    }   
+    nav a:hover {
+        background-color: #777;
+    }
+    
+    .sidebarlink{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .sidebarlink a{
+        background-color: rgb(21, 98, 55);
+        padding: 5px 20px;
+        color: aliceblue;
+        text-decoration: none;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+    }
+}
+
 
 @media print {
     .card1 a{

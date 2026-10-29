@@ -67,6 +67,20 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="question2">
+                <h3>Question Part 2</h3>
+                <p>Why do we need a viewport meta tag?</p>
+                <p>The viewport meta tag tells mobile browsers to use the device's real screen width instead of pretending to be about 980px wide. Without it, the page shows zoomed out with tiny text, and width-based media queries like max-width: 700px never match on a phone.</p>
+                <p>When you select the same tag twice, and in one of them you say <span class="tag1">flex-direction: column;</span> and the other says "flex-direction: row;", which one takes priority?</p>
+                <p>It depends on which rule comes later in the file, not on whether the value is column or row. The later rule wins.</p>
+                <p>How do you change the CSS for a web page displayed on a phone?</p>
+                <p>Use <span class="tag1">@media</span> to add or replace some rules. Also need <span class="tag1">viewport tag</span>to make sure the browser knows what is the real width.</p>
+                <p>Pick a website you use on your phone. Name two things it changes on mobile compared to desktop.</p>
+                <p>BYUH app. The navigation bar is very different. the desktop view has more complext bar while phone view is simplified. The card is more visible in desktop view but structuraly compressed in phone view.</p>
+                <p>What width did you choose for your breakpoint, and why?</p>
+                <p>I chose 700px because when I made the page narrower in DevTools, at that width the sidebar became too thin and its text wrapped awkwardly, so the layout should stack there.</p>
+            </div>
             <div class="cards">
                 <div class="card1">
                     <img src="image/city1.jpg" alt="city">
