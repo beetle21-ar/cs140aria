@@ -25,6 +25,7 @@
         </aside>
         <main class="main-content">
             <h2 class="main-title">Learning Table</h2>
+            <div class="tablediv">
             <table class="table-sched">
                 <caption>My Class Schedule: 2027</caption>
                 <thead>
@@ -98,7 +99,7 @@
                     </tr>
                     <tr>
                         <th scope="row" colspan="6">Spring 2027 Subtotal</th>
-                        <td>17</td>
+                        <td class="totalcredit">17</td>
                     </tr>
                 </tbody>
                 <tbody class="tbd">
@@ -161,17 +162,19 @@
                     </tr>
                     <tr>
                         <th scope="row" colspan="6">Winter 2027 Subtotal</th>
-                        <td>17</td>
+                        <td class="totalcredit">17</td>
                     </tr>
                 </tbody>
                 <tfoot>
                         <tr>
                             <th scope="row" colspan="6">Total Credits</th>
-                            <td>34</td>
+                            <td class="totalcredit">34</td>
                         </tr>
                 </tfoot>
             </table>
+            </div>
             <div class="questions">
+                <h3>Questions Part 1</h3>
                 <p>
                     When do you use a table?
                 </p>
@@ -201,6 +204,27 @@
                 </p>
                 <p class="answer">
                     Not really, it showed me how the codes work, but not really giving me exploration, so I keep asking what I want to explore.
+                </p>
+            </div>
+            <div class="questions">
+                <h3>Questions part 2</h3>
+                <p>
+                    Why don't we use the border attribute?
+                </p>
+                <p class="answer">
+                    The border attribute is outdated attribute, now we use css to style the html.
+                </p>
+                <p>
+                    What is the easiest way to color every other row a different color?
+                </p>
+                <p class="answer">
+                    The easiest way is using the CSS pseudo-class :nth-child(even) (or :nth-child(odd)).
+                </p>
+                <p>
+                    What does the value in the parentheses of your structural pseudo-class mean? Give one other value you could use and which rows it would select.
+                </p>
+                <p class="answer">
+                    It is for choosing which row or column you want to give effect to. I use tr:nth-child(even), it means that I use even number to give different color from the odd rows. Another value is odd, which would select the 1st, 3rd, 5th, and all other odd-numbered rows.
                 </p>
             </div>
         </main>

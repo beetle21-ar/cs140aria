@@ -117,25 +117,50 @@ body {
 }
 
 .table-sched {
-    border: 5px solid black;
+    border: 3px solid black;
     width: 100%;
     border-collapse: collapse;
 }
 
 .table-sched th{
-    border: 1px solid #d1d5db;
+    border: 2px solid #d1d5db;
     padding: 8px 12px;
-    background-color: #89898a;
+    background-color: #1e1e4a;
+    color: #e5e7eb;
 }
 
 .table-sched td{
-        border: 1px solid #d1d5db;
+    border: 1px solid #d1d5db;
     padding: 8px 12px;
     text-align: left;
+    vertical-align: top;
 }
 
+.table-sched tr:nth-child(even){
+    background-color: #d1d3d6;
+}
+
+.table-sched tbody tr:hover {
+    background-color: #f2ffab; 
+}
+
+.table-sched td:last-child{
+    text-align: right;
+}
 .answer {
     text-indent: 30px;
+}
+
+caption{
+    caption-side: top;
+}
+
+.totalcredit{
+    background-color: #babbbd;
+}
+
+.tablediv{
+    overflow-x: auto;
 }
 
 @media only screen AND (max-width: 768px) {
