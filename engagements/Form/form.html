@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Example</title>
+
+</head>
+<body>
+    <header class="header">
+        <h1>Aria Wirastyo's Design</h1>
+    </header>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#Form">Form</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="content-container">
+        <main class="main-content">
+            <h2 id="form">Form</h2>
+            <form action="formprocessing.html" method="post">
+                <div class="form-row">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="username">
+                </div>
+                <div class="form-row">
+                    <label for="email">email</label>
+                    <input type="text" name="email" id="email" placeholder="email">
+                </div>
+                <div class="form-row">
+                    <label for="password">password</label>
+                    <input type="password" name="password" id="password" placeholder="password">
+                </div>
+                <div class="form-row">
+                    <input type="submit">  
+            </form>
+
+            <h3>Questions</h3>
+            <p>The form tag has an "action" attribute. What does it do?</p>
+            <p>&RightArrow; It is to bring the user to the target html based on their form data that has been filled. the user will not be able to go the the target html if the user does not fill the form completely as prompted.</p>
+            <p>The form tag has a "method" attribute. What does it do?</p>
+            <p>&RightArrow; It is to choose which method to send the form data to the </p>
+            <p>What is the difference between a "POST" and a "GET"?</p>
+            <p>&RightArrow; If we are changing or adding data, we use post, if we want to </p>
+            <p>How do you fill in a form control with a pre-set value, and how is that different from a placeholder? Answer for each of these: text box, textarea, select box, checkbox, and radio button.</p>
+            <p>&RightArrow; Pre-set value is an actual option that user can choose instead of inputting a data. User must change the value so that the preset will not be chosen.</p>
+            <p> A placeholder is a hint that helps user to know what to input </p>
+            <p>Example below:</p>
+            <form action="formprocessing.html" method="post">
+                <p>Text only</p>
+                <div class="form-row">
+                    <label for="name">name</label>
+                    <input type="text" name="name" id="name" value="Aria">
+                </div>
+                <div class="form-row">
+                    <label for="name">name</label>
+                    <input type="text" name="name" id="name" placeholder="Aria">
+                </div>
+                <p>with text area</p>
+                <div class="form-row">
+                    <label for="name">name</label>
+                    <textarea name="name" id="name" placeholder="aria"></textarea>
+                </div>
+                <div class="form-row">
+                    <label for="name">name</label>
+                    <textarea name="name" id="name">Aria</textarea>
+                </div>
+                <p>With select</p>
+                <div class="form-row">
+                    <label for="name">name</label>
+                    <select name="name" id="name">
+                        <option value="d" disabled selected hidden>choose an option</option>
+                        <option value="a">a</option>
+                        <option value="b">b</option>
+                        <option value="c">c</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="name">name</label>
+                    <select name="" id="">
+                        <option value="d" >name</option>
+                        <option value="a">a</option>
+                        <option value="b">b</option>
+                        <option value="c">c</option>
+                    </select>
+                </div>
+                <p>With Checkbox (placeholder is not applicable)</p>
+                <div class="form-row">
+                    <label for="name">name</label>
+                    <input type="checkbox" name="agree" value="yes">
+                </div>
+                <div class="form-row">
+                    <label for="name">name</label>
+                    <input type="checkbox" name="agree" value="yes">
+                </div>
+                <div class="form-row">
+                    <label for="name">name</label>
+                    <input type="checkbox" name="agree" value="yes">
+                </div>
+
+                <p>With Radio button (placeholder is not applicable)</p>
+                <div class="form-row">
+                    <label for="name">name</label>
+                    <input type="radio" name="plan" value="basic" checked>
+                </div>
+
+            </form>
+            
+            <p>List all the form controls that HTML5 added. Which ones did you put in your form?</p>
+    <pre>
+    &RightArrow; New input types:
+    email &check;
+    tel
+    url
+    number
+    range
+    date
+    time
+    datetime-local
+    month
+    week
+    color
+    search
+    New form-related elements:
+    datalist (autocomplete options for input fields)
+    output (displays results of calculations)
+    meter (scalar measurement within a known range)
+    progress (task completion indicator)
+    </pre>
+        </main>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2026 Aria Wirastyo</p>
+    </footer>
+</body>
+</html>
