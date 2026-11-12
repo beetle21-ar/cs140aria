@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Example</title>
+    <link rel="stylesheet" href="form.css">
 
 </head>
 <body>
@@ -17,25 +18,69 @@
     </nav>
     <div class="content-container">
         <main class="main-content">
-            <h2 id="form">Form</h2>
-            <form action="formprocessing.html" method="post">
-                <div class="form-row">
-                    <label for="username">Username</label>
-                    <input type="text" name="username" id="username" placeholder="username">
-                </div>
-                <div class="form-row">
-                    <label for="email">email</label>
-                    <input type="text" name="email" id="email" placeholder="email">
-                </div>
-                <div class="form-row">
-                    <label for="password">password</label>
-                    <input type="password" name="password" id="password" placeholder="password">
-                </div>
+            <h2 id="form" class="main-title">Form</h2>
+            <form action="formprocessing.html" method="post" class="form-configuration">
+                
+                <fieldset class="fieldset">
+                    <legend>account</legend>
+                    <div class="form-row">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" placeholder="username">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">email</label>
+                        <input type="text" name="email" id="email" placeholder="email">
+                    </div>
+                    <div class="form-row">
+                        <label for="password">password</label>
+                        <input type="password" name="password" id="password" placeholder="password">
+                    </div>  
+                </fieldset>
+                <fieldset class="fieldset">
+                    <legend>About you</legend>
+                    <div class="form-row">
+                        <label for="about">About</label>
+                        <textarea name="about" id="about" placeholder="Write your interest"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <label for="date">Birthday</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div class="form-row">
+                        <label for="name">name</label>
+                        <select name="name" id="name">
+                            <option value="d" disabled selected hidden>choose an option</option>
+                            <option value="a">a</option>
+                            <option value="b">b</option>
+                            <option value="c">c</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div>
+                            <p>If you need to save your info:</p>
+                            <div class="form-spacer">
+                                <label for="remember"><input type="checkbox" name="agree" value="yes"> remember me</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div>
+                        <p>Gender:</p>
+                            <div class="form-spacer">
+                                <label for="gender">
+                                    <input type="radio" id="gender" value="male">Male
+                                    <input type="radio" id="gender" value="female">Female
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
                 <div class="form-row">
                     <input type="submit">  
+                </div>
             </form>
-
-            <h3>Questions</h3>
+            <div class="question-1">
+            <h3>Questions Part 1</h3>
             <p>The form tag has an "action" attribute. What does it do?</p>
             <p>&RightArrow; It is to bring the user to the target html based on their form data that has been filled. the user will not be able to go the the target html if the user does not fill the form completely as prompted.</p>
             <p>The form tag has a "method" attribute. What does it do?</p>
@@ -101,7 +146,7 @@
                 <p>With Radio button (placeholder is not applicable)</p>
                 <div class="form-row">
                     <label for="name">name</label>
-                    <input type="radio" name="plan" value="basic" checked>
+                    <input type="radio" name="plan" value="basic">
                 </div>
 
             </form>
@@ -128,6 +173,13 @@
     progress (task completion indicator)
     </pre>
         </main>
+    </div>
+</div>
+    <div class="question-2">
+        <h3>Questions Part 2</h3>
+        <p>What are different ways to style your form?</p>
+        <p>Why does the professor like to use flex?</p>
+        <p>What makes for a good mobile form?</p>
     </div>
     <footer class="footer">
         <p>&copy; 2026 Aria Wirastyo</p>
