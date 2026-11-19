@@ -148,19 +148,9 @@ input:focus, select:focus, textarea:focus {
         margin: 10px;
     }
 
-    .sidebar {
-        flex: 0 0 100%;
-        width: 100%;
-    }
-
     .form-row {
         flex-direction: column;
         width: 100%;
         max-width: 100%;
-    }
-
-    pre {
-        white-space: pre-wrap;
-        word-break: break-word;
     }
 }
