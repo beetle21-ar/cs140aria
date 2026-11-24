@@ -59,3 +59,8 @@ iframe {
         max-width: 100%;
     }
 }
+
+.invitation {
+    text-align: center;
+    margin-top: 50px;
+}
